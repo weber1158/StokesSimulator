@@ -1,7 +1,7 @@
 # **Stokes Simulator**
 Visualize the settling speeds of dust particles in the atmosphere.
 
-<img src="Screenshot_StokesSimulator" alt="Stokes Simulator Screenshot" width="300" height="200">
+<img src="Screenshot_StokesSimulator.png" alt="Stokes Simulator Screenshot" width="450" height="300">
 
 ## ℹ **About**
 `StokesSimulator` is a graphical user interface designed in MATLAB.
