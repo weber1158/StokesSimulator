@@ -30,7 +30,7 @@ Download this repository on your PC and call the `pathtool` function in MATLAB t
 from the Command Window to open the `StokesSimulator` app.
 
 ## 📖 **Documentation**
-Documentation for this repository will be housed on the [**Wiki page**](https://github.com/weber1158/StokesSimulator/wiki).
+Documentation for this repository will be housed on the [**Wiki page**](https://github.com/weber1158/StokesSimulator/wiki/Documentation).
 
 ## 🤝 **Contributing**
 Contributions are always welcome! Simply:
