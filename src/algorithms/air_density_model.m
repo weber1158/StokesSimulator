@@ -14,3 +14,7 @@ function val = air_density_model(altitude)
   polyfit_coefficients = polyfit(elevations, air_densities, 2);
   val = polyval(polyfit_coefficients, altitude);
 end
+
+% Data from Engineering Toolbox
+% https://www.engineeringtoolbox.com/standard-atmosphere-d_604.html
+% Last accessed 28 April 2026

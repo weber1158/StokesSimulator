@@ -1,7 +1,7 @@
 function delta_u = aspect_ratio_adjustment(radius_p, AR)
 %Relative reduction of settling velocity
 %Nonlinear adjustment as a function of particle size and aspect ratio
-% See Equation 12 in Ginoux (2001) and Table 2.
+% See Equation 12 in Ginoux (2003) and Table 2.
 
   % Fitting parameter z, which is a function of x, a1, and a2
   function z = calculate_z(x,a1,a2)
