@@ -1,7 +1,7 @@
 # **Stokes Simulator**
-Visualize the settling speeds of dust particles in the atmosphere.
+*Visualize the settling speeds of mineral particles in the atmosphere or in water.*
 
-<img width="793" height="616" alt="image" src="https://github.com/user-attachments/assets/86f55a99-59c2-44f8-88a2-8601745808ff" />
+<img width="799" height="700" alt="image" src="https://github.com/user-attachments/assets/37d5361f-c300-470c-959d-11f17ae78c14" />
 
 ## ℹ **About**
 `StokesSimulator` is a graphical user interface designed in MATLAB.
@@ -14,7 +14,7 @@ Stokes' Law for the settling velocity of a particle (`Vp`) takes the form:
 
 where `r` is the radius of a particle, `rho_p` is the density of the particle, `rho_f` is the density of the fluid (in this case air), and `mu_f` is the dynamic viscosity of the fluid. The terms `rho_f` and `mu_f` depend on elevation.
 
-`rho_f` and `mu_f` are calculated using data from [Engineering Toolbox](https://www.engineeringtoolbox.com/standard-atmosphere-d_604.html).
+`rho_f` and `mu_f` are calculated using data from [Engineering Toolbox](https://www.engineeringtoolbox.com/standard-atmosphere-d_604.html), or, if you are working in the water simulator tab, the fluid parameters are calculated using data from [Engineers Edge](https://www.engineersedge.com/physics/water__density_viscosity_specific_weight_13146.htm).
 
 Mineralogical composition governs the `rho_p` term. Mineral densities were acquired from Gonçalves Ageitos et al. (2023, Atmos. Chem. Phys.). 
 
