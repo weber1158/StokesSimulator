@@ -19,8 +19,8 @@ There are currently 3 test files, each with three test cases. Each test file com
 
 | Test File | Test Functions |
 | :-- | :-- |
-|`testAspectRatioAdjustment.m`| `testKnowReferenceValue1` |
-|                           | `testKnowReferenceValue2` |
+|`testAspectRatioAdjustment.m`| `testKnownReferenceValue1` |
+|                           | `testKnownReferenceValue2` |
 |                           | `testIncreasingAspectRatioDecreasesVelocity` |
 |||
 |`testStokesLawModel.m`|`testKnownReferenceValue`|
