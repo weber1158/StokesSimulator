@@ -16,9 +16,9 @@ where `r` is the radius of a particle, `rho_p` is the density of the particle, `
 
 `rho_f` and `mu_f` are calculated using data from [Engineering Toolbox](https://www.engineeringtoolbox.com/standard-atmosphere-d_604.html), or, if you are working in the water simulator tab, the fluid parameters are calculated using data from [Engineers Edge](https://www.engineersedge.com/physics/water__density_viscosity_specific_weight_13146.htm).
 
-Mineralogical composition governs the `rho_p` term. Mineral densities were acquired from Gonçalves Ageitos et al. (2023, Atmos. Chem. Phys.). 
+Mineralogical composition governs the `rho_p` term. Mineral densities were acquired from Gonçalves Ageitos et al. ([2023, Atmos. Chem. Phys.](https://doi.org/10.5194/acp-23-8623-2023)). 
 
-The aspect ratio correction is based on the work of Ginoux (2003, JGR Atmos.).
+The aspect ratio correction is based on the work of Ginoux ([2003, JGR Atmos.](https://doi.org/10.1029/2002JD002516)).
 
 ## 🛠 **Installation**
 Download this repository on your PC and call the `pathtool` function in MATLAB to open the Path Tool app. Use the Path Tool app to add the contents of this repository to the default search path. This will complete your installation and you can then call
@@ -42,3 +42,14 @@ Contributions are always welcome! Simply:
 If you would like to report an error  or file a feature request, please open a new issue on the [**Issues page**](https://github.com/weber1158/StokesSimulator/issues).
 
 For general questions or disscussion, you can open a new discussion on the [**Disucussions page**](https://github.com/weber1158/StokesSimulator/discussions).
+
+---
+
+### How to cite
+```tex
+@misc{StokesSimulator,
+    author = {Weber, Austin M.},
+    title = {Stokes Simulator},
+    note = {version 2.x [Software]. GitHub. https://github.com/weber1158/StokesSimulator}
+}
+```
