@@ -1,7 +1,11 @@
 function a4 = calculate_a4(aspect_ratio)
 %Fitting parameter a0, as a function of aspect ratio
 %The a0 fitting parameter for Eq.12 in Ginoux (2003)
+persistent ai
+persistent ar_range
+persistent C
 
+if isempty(ai)
   % Fitting parameters: a0, a1, a2, a3, a4, and a5 for ARs 2:10
   ai = [-36.2340	2.1860	0.1800	 0.5980	  4.8080   8.0110
         -55.6570	2.2650	0.2210	11.2340	  8.5120  10.6020
@@ -12,16 +16,22 @@ function a4 = calculate_a4(aspect_ratio)
         -110.926	2.8130	0.4720 	42.9920	 11.3620   9.2000
         -121.087	2.9150	0.5130 	46.3380	 11.2800   8.8560
         -130.914	3.0120	0.5520 	49.1960	 11.1670   8.5510];
+end
 
+if isempty(ar_range)
   % Aspect ratio range
   ar_range = 2:10;
+end
+
+if isempty(C)
   % Fit 5th-degree polynomial to the data
   %   If you don't trust the fitting choice, run the `fitting_parameters.m`
   %   script to see the output. The app that we are building only considers
   %   aspect ratios between 1 and 10, and so the 5th degree polynomial fit
   %   works very well with this input range.
   C = polyfit(ar_range, ai(:,5), 5);
+end
 
-  % Calculate a0
-  a4 = polyval(C, aspect_ratio);
+% Calculate a4
+a4 = polyval(C, aspect_ratio);
 end

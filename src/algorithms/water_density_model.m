@@ -1,6 +1,11 @@
 function val = water_density_model(temperature)
 %Modeled water density
 %Calculate the density of water (kg/m3) at a specified temperature
+persistent temps
+persistent water_densities
+persistent polyfit_coefficients
+
+if isempty(temps)
   temps = [  0.0; 
              4.0; 
              4.4; 
@@ -16,6 +21,9 @@ function val = water_density_model(temperature)
             82.2; 
             93.3; 
            100.0]; % Degrees C
+end
+
+if isempty(water_densities)
   water_densities = [0.99987;
                      1.00000; 
                      0.99999; 
@@ -31,8 +39,14 @@ function val = water_density_model(temperature)
                      0.97056;
                      0.96333;
                      0.95865].*1000; % g/cm^3 to kg/m^3
+end
+
+
+if isempty(polyfit_coefficients)
   polyfit_coefficients = polyfit(temps, water_densities, 3); % 3rd-order fit
-  val = polyval(polyfit_coefficients, temperature);
+end
+
+val = polyval(polyfit_coefficients, temperature);
 end
 
 % Data from Engineers Edge:

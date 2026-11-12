@@ -1,7 +1,15 @@
 function val = air_viscosity_model(altitude)
 %Modeled air viscosity
 %Calculate the dynamic viscosity of air (N s/m^2) at a specified altitude
+persistent elevations
+persistent air_viscosities
+persistent polyfit_coefficients
+
+if isempty(elevations)
   elevations = 0 : 1000 : 8000;
+end
+
+if isempty(air_viscosities)
   air_viscosities = [1.7890;
                      1.7580; 
                      1.7260; 
@@ -11,8 +19,13 @@ function val = air_viscosity_model(altitude)
                      1.5950;
                      1.5610;
                      1.5270] .* 10^(-5);
+end
+  
+if isempty(polyfit_coefficients)
   polyfit_coefficients = polyfit(elevations, air_viscosities, 2);
-  val = polyval(polyfit_coefficients, altitude);
+end
+
+val = polyval(polyfit_coefficients, altitude);
 end
 
 % Data from Engineering Toolbox
