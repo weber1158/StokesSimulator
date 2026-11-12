@@ -1,8 +1,12 @@
 # **Stokes Simulator**
 
-[![View my project on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/183801-stokessimulator) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/fileexchange/v1?id=183801)
-
 *Visualize the settling speeds of mineral particles in the atmosphere or in water.*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-FE4365.svg?style=flat-square)](LICENSE)
+[![MATLAB R2026a](https://img.shields.io/badge/MATLAB-R2026a-FC9D9A.svg?style=flat-square)](https://www.mathworks.com/products/matlab.html)
+[![Tests](https://img.shields.io/badge/Tests-Passing-D8DCD6.svg?style=flat-square)](https://github.com/weber1158/stokessimulator/blob/main/tests/)
+
+[![View my project on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/183801-stokessimulator) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/fileexchange/v1?id=183801)
 
 <img width="799" height="700" alt="image" src="https://github.com/user-attachments/assets/37d5361f-c300-470c-959d-11f17ae78c14" />
 
